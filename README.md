@@ -31,30 +31,36 @@ The script uses the World Bank's public API to retrieve data for a specific indi
 
 ### Usage
 
-To run the script, simply execute the `main.py` file:
+To run the World Bank script, execute the `main.py` file:
 
 ```bash
 python src/main.py
 ```
 
-The script will fetch the data and print it to the console. You can modify the `indicator` and `date_range` variables in the `main` function in `src/main.py` to fetch different data.
-
 ---
 
-## Binance Price Ticker
+## Binance Integrations
+
+This project also includes scripts to interact with the Binance API.
+
+### Binance Price Ticker
 
 This script fetches the latest price of a cryptocurrency trading pair from the Binance API and displays it in the console.
 
-### Description
-
-The script uses the Binance public API to get the latest price for a given trading symbol (e.g., BTCUSDT).
-
-### Usage
-
-To run the script, execute the `binance_integration.py` file:
+**Usage:**
 
 ```bash
 python src/binance_integration.py
 ```
 
-You can change the `symbol` variable in the `main` function in `src/binance_integration.py` to get the price of a different trading pair.
+### Binance Price Chart
+
+This script fetches historical k-line data for a trading pair and generates a price chart, which is saved as a PNG image.
+
+**Usage:**
+
+```bash
+python src/binance_chart.py
+```
+
+This will create a file named `btcusdt_chart.png` in the root directory. You can change the symbol and other parameters in the `main` function of `src/binance_chart.py`.
